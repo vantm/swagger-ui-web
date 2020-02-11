@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const fetch = require('node-fetch');
 const path = require('path');
 
-const PORT = process.env.SWAGGER_VIEW_PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 let swaggerDocumentCache = null;
 
