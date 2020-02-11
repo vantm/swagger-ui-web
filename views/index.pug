@@ -1,0 +1,20 @@
+html
+    head
+        title View Swaggger
+
+        style(type="text/css").
+            body {
+                width: 1024px;
+                margin: 0 auto;
+                padding: 12px;
+            }
+
+            .input {
+                display: block;
+                width: 100%;
+            }
+    body
+        form(action="/view" method="post")
+            input.input(name="url" type="text" placeholder="Input Swagger URL ...")
+
+            input(type="submit", value="view")
